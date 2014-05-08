@@ -57,7 +57,10 @@ ln -s "{query}" ./scope</string>
 				<key>acceptsmulti</key>
 				<false/>
 				<key>filetypes</key>
-				<array/>
+				<array>
+					<string>public.folder</string>
+					<string>public.volume</string>
+				</array>
 				<key>name</key>
 				<string>Set as Quick Search Folder</string>
 			</dict>
@@ -154,7 +157,7 @@ ln -s "{query}" ./scope</string>
 		<key>EC394A7B-FE21-41EC-A553-00CA8151D68E</key>
 		<dict>
 			<key>ypos</key>
-			<real>50</real>
+			<real>40</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
