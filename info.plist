@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>0DE743C1-268A-45B5-9BCD-332E43256447</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>441B9303-0399-40C1-B675-30F440D82F6E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>441B9303-0399-40C1-B675-30F440D82F6E</key>
+		<array/>
 		<key>EC394A7B-FE21-41EC-A553-00CA8151D68E</key>
 		<array>
 			<dict>
@@ -40,7 +53,9 @@
 	rm ./scope
 fi
 
-ln -s "{query}" ./scope</string>
+ln -s "{query}" ./scope
+
+osascript -e 'tell application "Alfred 2" to run trigger "qfs" in workflow "ch.ra-phi.alfred.quick-folder-search"'</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -62,12 +77,25 @@ ln -s "{query}" ./scope</string>
 					<string>public.volume</string>
 				</array>
 				<key>name</key>
-				<string>Set as Quick Search Folder</string>
+				<string>Quick Folder Search</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>EC394A7B-FE21-41EC-A553-00CA8151D68E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>qfs</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>0DE743C1-268A-45B5-9BCD-332E43256447</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -144,10 +172,15 @@ ln -s "{query}" ./scope</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0DE743C1-268A-45B5-9BCD-332E43256447</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
 		<key>441B9303-0399-40C1-B675-30F440D82F6E</key>
 		<dict>
 			<key>ypos</key>
-			<real>330</real>
+			<real>260</real>
 		</dict>
 		<key>7BCEE4FC-C663-4BF9-959D-7F2E6E163109</key>
 		<dict>

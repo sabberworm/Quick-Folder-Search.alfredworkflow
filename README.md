@@ -8,7 +8,7 @@ The [name](https://github.com/sabberworm/Quick-Folder-Search.alfredworkflow/blob
 
 # Usage
 
-  1. Find a folder in Alfred and run “Set as Quick Search Folder” on it.
-  2. Type `qfs «searchterm»` to search only inside the folder.
+  * Find a folder in Alfred and run “Quick Folder Search” on it. A search field will pop up.
+  * To search again in the previously selected folder, type `qfs «searchterm»`.
 
 You can use the `qfs` filter as long as you want until you decide to make a new folder your search folder using “Set as Quick Search Folder”.
